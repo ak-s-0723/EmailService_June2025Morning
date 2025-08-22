@@ -34,7 +34,7 @@ public class EmailConsumer {
             Authenticator auth = new Authenticator() {
                 //override the getPasswordAuthentication method
                 protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication(emailDto.getFrom(), "jncx wwyl ngqz jejs");
+                    return new PasswordAuthentication(emailDto.getFrom(), "");
                 }
             };
             Session session = Session.getInstance(props, auth);
